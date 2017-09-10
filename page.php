@@ -17,6 +17,7 @@ if(have_posts()) {
         echo "</h1>";
         echo "</a>";
         the_content();
+      
         
     }
 } else {
