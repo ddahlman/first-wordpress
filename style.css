@@ -1,0 +1,211 @@
+/*
+Theme Name: daniel
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: daniel
+Author URI: https://wordpress.org/
+Description: A custom theme buildt by Daniel Dahlman
+Version: 1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: daniel
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./font/BebasNeue.otf') format('opentype');
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.h1-img {
+    font: 190px bold, 'BebasNeue';
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    min-height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*======= posts ===========================*/
+
+.well {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px;
+}
+
+h1 {
+    color: #909090;
+}
+
+a.title-links h1:hover {
+    color: #555;
+}
+
+.title-links:hover {
+    text-decoration: none;
+}
+
+.time {
+    font-size: 70%;
+}
+
+
+/*========================================*/
+
+
+/*========== header-img ==================*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-img {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+}
+
+
+/*========================================*/
+
+
+/*=========== navbar =====================*/
+
+.navbar {
+    border-radius: 0;
+}
+
+
+/*========================================*/
+
+
+/*=========== sidebar =====================*/
+
+.sidebar-module {
+    font-family: 'BebasNeue';
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sidebar-module:hover {
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+ul#menu-social-menu.menu {
+    font-size: 300%;
+}
+
+.face,
+.linkd,
+.twitter {
+    color: #222;
+}
+
+.face:hover {
+    transition: 0.5s;
+    color: purple;
+}
+
+.linkd:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.twitter:hover {
+    transition: 0.5s;
+    color: blue;
+}
+
+
+/*========================================*/
+
+
+/*=========== single-page comment-form =====================*/
+
+#comment {
+    border-radius: 5px;
+}
+
+#commentform p label {
+    clear: both;
+    display: block;
+}
+
+#commentform p input#submit {
+    background-color: #006dcc;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#commentform p input#submit:hover {
+    background-color: #23527c;
+}
+
+
+/*========================================*/
+
+
+/*=========== footer =====================*/
+
+.foot {
+    background-color: #222222;
+    padding: 20px;
+    color: #999;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/*========================================*/
+
+
+/*=========== single-page =====================*/
+
+.single-page {
+    margin-top: 15%;
+}
+
+
+/*========================================*/
+
+
+/*=========== 404-page =====================*/
+
+.error {
+    border: 3px solid red;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-top: 15%;
+}
+
+
+/*========================================*/
+
+@media (max-width: 780px) {
+    .h1-img {
+        font: 50px bold, 'BebasNeue';
+    }
+}
